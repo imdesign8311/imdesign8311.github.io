@@ -217,11 +217,13 @@ footer .logo-letra{
     background-color: var(--color-p1);
     padding: 30px;
     min-height: 100vh;
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .quienes-somos div.mision-vision p{
     width: 70%;
-    margin: 40px auto 45px;
+    margin: 40px auto 100px;
 }
 .quienes-somos div.mision-vision div{
     display: flex;
