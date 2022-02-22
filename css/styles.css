@@ -30,6 +30,7 @@ html{
     position: relative;
     min-height: 100%;
     scroll-behavior: smooth;
+    background-color: #ffeec3;
 }
 h1{
     font-size: 40px;
@@ -117,6 +118,7 @@ nav ul li a{
 }
 
 /* FOOTER */
+
 footer {
     background-color: var(--color-s4);
     position: absolute;
@@ -220,6 +222,7 @@ footer .logo-letra{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
 }
 .quienes-somos div.mision-vision p{
     width: 70%;
@@ -238,4 +241,240 @@ footer .logo-letra{
 .quienes-somos div.mision-vision div p{
     width: 70%;
     margin: 10px auto;
+}
+
+
+/* **** TIENDA **** */
+/*  SUBMENU */
+.sub-menu{
+    background-color: var(--color-s1);
+    height: 85px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.sub-menu li{
+    /* display: inline-block; */
+    font-size: 27px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* main.tienda */
+.main-tienda{
+    /* margin-bottom: 130px; */
+    margin: 50px 40px 130px;
+}
+.main-tienda h1{
+    text-align: center;
+}
+
+/* galeria de la tienda */
+.galeria{
+    /* background-color: var(--color-p3); */
+    width: 100%;
+    margin: 0 auto;
+    /* overflow: hidden; */
+    padding: 60px 0;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.galeria-figure{
+    background-color: var(--color-p3);
+    border-radius: 20px;
+    min-width: 200px;
+    height: fit-content;
+    padding: 20px;
+    /* flex: 300px; */
+    margin-bottom: 20px;
+}
+.galeria-figure div {
+    margin-top: 15px;
+}
+.galeria-figure div p{
+    text-align: center;
+    color: #fff;
+}
+.galeria-figure .boton{
+    font-size: 25px;
+    background-color: var(--color-p5);
+    display: block;
+    margin: -25px auto 0;
+    padding: 10px 30px;
+    position: relative;
+    top: 44px;
+}
+.galeria-img{
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* **** CURSO **** */
+/* FRASE */
+.fraseCurso{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 264px;
+    margin-top: 30px;
+}
+.fraseCurso h1{
+    width: 60%;
+    text-align: center;
+}
+.fraseCurso img{
+    margin-right: 200px;
+    margin-left: 80px;
+}
+/* Modalidades del curso */
+.modalidadesCurso{
+    background-color: var(--color-p5);
+    padding: 44px;
+    margin-bottom: 130px;
+}
+.modalidadesCurso h2{
+    margin-bottom: 20px;
+}
+.modalidadesCurso h4{
+    margin-bottom: 14px;
+}
+.modalidadesCurso div{
+    text-align: center;
+    max-width: 80%;
+    margin: auto;
+}
+.modalidadesCurso div:first-child .modalidad{
+    display: inline-block;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin: 50px 30px 90px;
+    position: relative;
+    padding: 10px;
+}
+.modalidadesCurso div:first-child .modalidad::before{
+    content: '';
+    position: absolute;
+    border-bottom: 1px solid rgba(255, 2, 2, 0.5);;
+    border-right: 1px solid rgba(255, 2, 2, 0.5);;
+    width: 25%;
+    height: 25%;
+    bottom: 0;
+    right: 0;
+}
+.modalidadesCurso div:first-child .modalidad::after{
+    content: '';
+    position: absolute;
+    border-top: 1px solid rgba(255, 2, 2, 0.5);;
+    border-left: 1px solid rgba(255, 2, 2, 0.5);;
+    width: 25%;
+    height: 25%;
+    top: 0;
+    left: 0;
+}
+.modalidadesCurso div:first-child .modalidad .p1 li:nth-child(0n+3) li{
+    list-style: initial;
+    width: 60%;
+    margin: auto;
+}
+.modalidadesCurso div:nth-child(0n+2){
+    margin-top: 45px;
+}
+/* whassap contenedor */
+.whassapContenedor{
+    background-color: var(--color-p1);
+    border-radius: 39px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 600px;
+    margin: 20px auto 140px !important;
+    padding: 20px 0;
+}
+.whassapContenedor form{
+    width: 82%;
+    margin: 20px 0;
+}
+.whassapContenedor form input, textarea{
+    display: block;
+    margin-bottom: 10px;
+    background-color: #DEDCF0;;
+    border-radius: 17px;
+    border: none;
+    padding: 10px 0 10px 10px;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--color-p4);
+}
+.whassapContenedor form textarea{
+    overflow: hidden;
+    resize: vertical;
+}
+.whassapContenedor form input::placeholder, textarea::placeholder{
+    color: var(--color-p1);
+    opacity: 1;
+}
+.whassapContenedor form input:focus, textarea:focus{
+    border: none;
+    outline: 3.3px solid rgba(255, 255, 255, 0.226);
+}
+.whassapContenedor button.boton{
+    font-size: 22px;
+    font-weight: 500;
+    margin: 32px auto 0px;
+    display: block;
+    background-color: var(--color-p5);
+}
+
+
+/* **** BLOG **** */
+/* sub menu del blog */
+.sub-menu-blog{
+    background-color: transparent;
+    position: relative;
+}
+.sub-menu-blog::after{
+    content: '';
+    position: absolute;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.6);
+    width: 90%;
+    height: 100%;
+}
+/* Contenido del blog */
+.gridBlog{
+    display: flex;
+    width: 90%;
+    margin: 30px auto;
+}
+.blogContent{
+    width: 100%;
+    float: inline-start;
+}
+/* Aside del blog */
+.blogAside{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 20px;
+    height: fit-content;
+    width: 50%;
+    margin-left: 60px;
+}
+.blogAside h4, .blogAside ul li{
+    padding: 12px;
+    text-align: center;
+}
+.blogAside h4, .blogAside ul li{
+    background-color: var(--color-p3);
+    margin-bottom: 20px;
+}
+.blogAside ul li{
+    background-color: var(--color-p1);
+    margin-bottom: 10px;
+    /* cursor: pointer; */
 }
