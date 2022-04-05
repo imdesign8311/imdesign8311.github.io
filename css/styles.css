@@ -171,7 +171,7 @@ footer .logo-letra{
 /*  PORTADA */
 .portada{
     height: 85vh;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.49), rgba(0, 0, 0, 0.49)), url('/assets/img/portada.png');
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.49), rgba(0, 0, 0, 0.49)), url('../assets/img/portada.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -445,6 +445,8 @@ footer .logo-letra{
     border-bottom: 3px solid rgba(0, 0, 0, 0.6);
     width: 90%;
     height: 100%;
+    /* display: none; */
+    z-index: -1;
 }
 /* Contenido del blog */
 .gridBlog{
@@ -468,6 +470,7 @@ footer .logo-letra{
 .blogAside h4, .blogAside ul li{
     padding: 12px;
     text-align: center;
+    cursor: pointer;
 }
 .blogAside h4, .blogAside ul li{
     background-color: var(--color-p3);
@@ -477,4 +480,19 @@ footer .logo-letra{
     background-color: var(--color-p1);
     margin-bottom: 10px;
     /* cursor: pointer; */
+}
+
+
+/* Estilos de los blogs */
+.tituloBlog{
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.parrafoBlog{
+    margin-bottom: 10px;
+    text-align: justify;
+}
+.parrafoBlog span{
+    font-weight: 600;
 }
